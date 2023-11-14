@@ -1,6 +1,6 @@
 // Função para obter e exibir o valor do BTC em tempo real
 function atualizarValorBTC() {
-    fetch("http://economia.awesomeapi.com.br/json/last/BTC-BRL")
+    fetch("https://economia.awesomeapi.com.br/json/last/BTC-BRL")
         .then(response => response.json())
         .then(data => {
             var valorBTC = data.BTCBRL.bid;
@@ -21,7 +21,7 @@ function converterMoeda() {
     var valor = parseFloat(document.getElementById("valor").value);
 
     if (moeda === "dolar") {
-        fetch("http://economia.awesomeapi.com.br/json/last/USD-BRL")
+        fetch("https://economia.awesomeapi.com.br/json/last/USD-BRL")
             .then(response => response.json())
             .then(data => {
                 var cotacaoDoDolar = data.USDBRL.bid;
@@ -32,7 +32,7 @@ function converterMoeda() {
                 console.error("Erro ao obter taxas de câmbio: " + error);
             });
     } else if (moeda === "euro") {
-        fetch("http://economia.awesomeapi.com.br/json/last/EUR-BRL")
+        fetch("https://economia.awesomeapi.com.br/json/last/EUR-BRL")
             .then(response => response.json())
             .then(data => {
                 var cotacaoDoEuro = data.EURBRL.bid;

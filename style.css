@@ -10,12 +10,12 @@ body {
 }
 
 .container {
-margin: 50px;
+    margin: 20px; /* Ajuste de margens */
 }
 
 .page-title {
     color: #ffffff;
-    margin: 10 0 5px;
+    margin: 10px 0 5px; /* Adição de unidades */
 }
 
 .page-logo {
@@ -30,9 +30,14 @@ margin: 50px;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 60%; /* Ajuste a largura conforme necessário */
-    max-width: 300px; /* Adicione uma largura máxima, se desejar */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 60%;
+    max-width: 300px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease; /* Adição de transição */
+}
+
+#valorBTC {
+    margin-bottom: 10px;
 }
 
 label, select, input, button {
