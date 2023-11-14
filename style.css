@@ -1,0 +1,52 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Background.png");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+margin: 50px;
+}
+
+.page-title {
+    color: #ffffff;
+    margin: 10 0 5px;
+}
+
+.page-logo {
+    width: 200px;
+}
+
+
+.converter, #valorBTC {
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 100%, 0.286);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 60%; /* Ajuste a largura conforme necessário */
+    max-width: 300px; /* Adicione uma largura máxima, se desejar */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+label, select, input, button {
+    margin: 10px;
+}
+
+button {
+    font-weight: bold;
+    padding: 5px 15px;
+    background-color: rgb(219, 25, 25);
+    cursor: pointer;
+}
+
+
+#resultado {
+    font-weight: bold;
+}
